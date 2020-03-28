@@ -69,8 +69,10 @@ module.exports = {
         onlyAllLowerCase: true, // filters out strings like 'Not-a-ClassName',
         exclude: [
           // a string will be excluded if ANY of these matches
+
           /_/ // filters out strings that contain `_`,
-          (s) => s.starts // filters out strings that start with an `a` and end with an `e`
+          
+          (s) => s.startsWith('a') && s.endsWith('e') // filters out strings that start with an `a` and end with an `e`
         ],
         include: [
           // same as exclude, but a string will be excluded if NONE of these match
