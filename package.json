@@ -1,6 +1,6 @@
 {
   "name": "purgecss-laminar-webpack-plugin",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "description": "PurgeCSS plugin for webpack - Remove unused css",
   "author": "Iurii Malchenko <i@yurique.com> (https://github.com/yurique)",
@@ -20,11 +20,11 @@
     "release": "standard-version"
   },
   "devDependencies": {
+    "@types/esprima": "^4.0.2",
     "@types/lodash": "^4.14.149",
     "@types/tapable": "1.0.4",
     "@types/webpack": "^4.39.7",
     "@types/webpack-sources": "^0.1.5",
-    "@types/esprima": "^4.0.2",
     "tslint": "6.1.0",
     "typescript": "^3.7.2",
     "webpack": "^4.41.2",
