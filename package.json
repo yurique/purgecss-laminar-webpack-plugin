@@ -1,0 +1,76 @@
+{
+  "name": "purgecss-laminar-webpack-plugin",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "PurgeCSS plugin for webpack - Remove unused css",
+  "author": "Iurii Malchenko <i@yurique.com> (https://github.com/yurique)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "lib/",
+    "index.js",
+    "default_index.ejs",
+    "typings.d.ts"
+  ],
+  "scripts": {
+    "lint": "tslint './src/**/*.ts*' --format stylish --project .",
+    "lint-fix": "tslint './src/**/*.ts*' --format stylish --project . --fix",
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "release": "standard-version"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.149",
+    "@types/tapable": "1.0.4",
+    "@types/webpack": "^4.39.7",
+    "@types/webpack-sources": "^0.1.5",
+    "@types/esprima": "^4.0.2",
+    "tslint": "6.1.0",
+    "typescript": "^3.7.2",
+    "webpack": "^4.41.2",
+    "webpack-sources": "^1.4.3"
+  },
+  "dependencies": {
+    "chalk": "3.0.0",
+    "esprima": "^4.0.1",
+    "lodash": "^4.17.15",
+    "pretty-bytes": "^5.3.0",
+    "purgecss": "^2.1.0"
+  },
+  "peerDependencies": {
+    "webpack": "^4.0.0"
+  },
+  "homepage": "https://github.com/yurique/purgecss-laminar-webpack-plugin",
+  "keywords": [
+    "webpack",
+    "plugin",
+    "optimize",
+    "optimization",
+    "remove",
+    "unused",
+    "css",
+    "rules",
+    "purge",
+    "uncss",
+    "purify",
+    "laminar",
+    "scala.js",
+    "scalajs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yurique/purgecss-laminar-webpack-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yurique/purgecss-laminar-webpack-plugin/issues"
+  },
+  "engines": {
+    "node": ">=6.9"
+  },
+  "jest": {
+    "watchPathIgnorePatterns": [
+      "<rootDir>/dist"
+    ],
+    "testEnvironment": "node"
+  }
+}

@@ -1,0 +1,22 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended"
+    ],
+    "jsRules": {},
+    "rules": {
+        "no-var-requires": false,
+        "max-line-length": {
+            "options": {"limit": 200}
+        },
+        "interface-name": false,
+        "object-literal-sort-keys": [
+            true,
+            "match-declaration-order"
+        ],
+        "trailing-comma": false,
+        "quotemark": [true, "single", "jsx-double"],
+        "callable-types": false
+    },
+    "rulesDirectory": []
+}
