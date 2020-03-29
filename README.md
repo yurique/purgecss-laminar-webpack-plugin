@@ -15,7 +15,7 @@ So, this will get broken:
 def component(color: String) = div(cls := s"my-component-$color")
 ```
 
-As a workaround one might use the whitelisting (which is the built in feature of PurgeCSS). See PurgeCSS docs for details on that.
+As a workaround one might use the whitelisting (which is a built-in feature of PurgeCSS). See PurgeCSS docs for details on that.
 
 ## Install
 ```sh
