@@ -53,7 +53,7 @@ These options from `purgecss-webpack-plugin` are not implemented:
 * `paths`
 * `only`
 
-Othewise you can check out the [purgecss-webpack-plugin](https://github.com/FullHuman/purgecss/tree/master/packages/purgecss-webpack-plugin) documentations for more details about configuration. 
+Othewise you can check out the [purgecss-webpack-plugin](https://github.com/FullHuman/purgecss/tree/master/packages/purgecss-webpack-plugin) documentation for more details about configuration. 
 
 #### Filtering strings 
 
