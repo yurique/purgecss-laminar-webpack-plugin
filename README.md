@@ -6,7 +6,7 @@ Derived from the [purgecss-webpack-plugin](https://github.com/FullHuman/purgecss
 
 ## Important
 
-The way PurgeCSS works is simple - you give it a list of classes that are actually used (well, normally it extracts this list itself, from a static html, or by extracting "words" from any text file, like a `.js` file), and then cleans up the css, removing everything it believes is unused.
+The way PurgeCSS works is simple - you give it a list of classes that are actually used (well, normally it extracts this list itself, from a static html, or by extracting "words" from any text file, like a `.js` file), and then it uses that list to clean up the CSS, removing everything it believes is unused.
 
 Thus, in order this plugin not to break your app in production - you can not build CSS class names with string interpolation or any other string manipulation functions. Every CSS class must be literally present in your code as a whole string.
 
