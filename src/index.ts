@@ -72,7 +72,7 @@ export default class PurgeCSSLaminarWebpackPlugin {
 
     infoLog('JavaScript assets:');
     javascriptsFromCompilation.forEach(j =>
-      log('  ', j.name, blue(prettyBytes(j.asset.source().length)))
+      log('  ', j.name)
     );
     const classNames: string[][] = javascriptsFromCompilation.map(
       ({ name, asset }) => {

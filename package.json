@@ -1,6 +1,6 @@
 {
   "name": "purgecss-laminar-webpack-plugin",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "license": "MIT",
   "description": "PurgeCSS plugin for webpack - Remove unused css",
   "author": "Iurii Malchenko <i@yurique.com> (https://github.com/yurique)",
