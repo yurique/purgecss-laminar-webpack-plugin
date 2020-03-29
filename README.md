@@ -57,7 +57,7 @@ Othewise you can check out the [purgecss-webpack-plugin](https://github.com/Full
 
 #### Filtering strings 
 
-You can reduce the number of strings that are considered to be potential CSS class names using the filters:
+You can reduce the number of strings that are considered to be potential CSS class names using the filters (these are applied AFTER the strings have been selected and broken down into CSS-class-name-like tokens):
 
 ```js
 export interface StringFilters {
