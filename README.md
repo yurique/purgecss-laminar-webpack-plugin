@@ -8,7 +8,12 @@ Derived from the [purgecss-webpack-plugin](https://github.com/FullHuman/purgecss
 
 The way PurgeCSS works is simple - you give it a list of classes that are actually used (well, normally it extracts this list itself, from a static html, or by extracting "words" from any text file, like a `.js` file), and then it uses that list to clean up the CSS, removing everything it believes is unused.
 
-Thus, in order this plugin not to break your app in production - you can not build CSS class names with string interpolation or any other string manipulation functions. Every CSS class must be literally present in your code as a whole string.
+Thus, in order this plugin not to break your app in production - you need to avoid building CSS class names with string interpolation or any other string manipulation functions. Every CSS class must be literally present in your code as a whole string (or a substing separated with whitespace, for example this is perfectly fine: `div(cls := "class-1 class-2 class-3")`). 
+
+So, this will get broken:
+```scala
+def component(color: String) = div(cls := s"my-component-$color")
+```
 
 As a workaround one might use the whitelisting (which is the built in feature of PurgeCSS). See PurgeCSS docs for details on that.
 
